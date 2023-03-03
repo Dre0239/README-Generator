@@ -1,7 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const { renderLicenseBadge, renderLicenseText } = require("./generateBadge");
+const {
+  renderLicenseBadge,
+  renderLicenseLink,
+} = require("./Develop/generateBadge");
 // TODO: Create an array of questions for user input
 const questions = ({
   badge,
@@ -61,7 +64,7 @@ inquirer
     {
       type: "input",
       message: "Please give a brief description.",
-      name: " description",
+      name: "description",
     },
     {
       type: "input",
@@ -103,7 +106,7 @@ inquirer
 
   .then((data) => {
     (data.badge = renderLicenseBadge(data.license)),
-      (data.licenseText = renderLicenseText(data.license)),
+      (data.licenseText = renderLicenseLink(data.license)),
       fs.writeFile("README-DEMO.md", questions(data), (err) => {
         err ? console.log(err) : console.log("Great Job!");
       });

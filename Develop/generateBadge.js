@@ -37,3 +37,4 @@ function renderLicenseLink(license) {
   }
   return licenseText;
 }
+module.exports = { renderLicenseBadge, renderLicenseLink };

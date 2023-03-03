@@ -1,12 +1,11 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const {
-  renderLicenseBadge,
-  renderLicenseText,
-} = require("./Develop/utils/generateBadges");
+const { renderLicenseBadge, renderLicenseText } = require("./generateBadge");
 // TODO: Create an array of questions for user input
 const questions = ({
+  badge,
+  licenseText,
   title,
   description,
   installation,
@@ -18,6 +17,8 @@ const questions = ({
   email,
 }) =>
   `# ${title}
+  ${badge}
+
 
 ## Description
 ${description}
@@ -44,6 +45,7 @@ ${tests}
 
 ## License
 ${license}
+${licenseText}
 
 ## Questions
 -   https://github.com/${github}
@@ -82,14 +84,14 @@ inquirer
       name: "tests",
     },
     {
-      type: "input",
+      type: "list",
       message: "Please provide a license name.",
       name: "license",
-      choices: ["MIT", "BSD", "NONE", "MOZILLA"],
+      choices: ["MIT", "BSD", "Mozilla"],
     },
     {
       type: "input",
-      message: "Developers Github Link.",
+      message: "Developers Github Users Name.",
       name: "github",
     },
     {
@@ -99,19 +101,10 @@ inquirer
     },
   ])
 
-  .then(
-    (data) => (data.badge = renderLicenseBadge(data.license)),
-    (data.licenseText = renderLicenseText(data.license)),
-    fs.writeFile("README-DEMO.md", questions(data), (err) => {
-      err ? console.log(err) : console.log("Great Job!");
-    })
-  );
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+  .then((data) => {
+    (data.badge = renderLicenseBadge(data.license)),
+      (data.licenseText = renderLicenseText(data.license)),
+      fs.writeFile("README-DEMO.md", questions(data), (err) => {
+        err ? console.log(err) : console.log("Great Job!");
+      });
+  });

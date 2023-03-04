@@ -44,12 +44,6 @@ Email:
 
 - https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 
-- Carly Gallagher- provided assistance
-
-- Rob Ambriz- provided assistance
-
-- Myleen Santana- provided assistance
-
 ## License
 
 ​MIT License

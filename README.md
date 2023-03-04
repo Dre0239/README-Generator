@@ -4,7 +4,7 @@
 
 ## Description
 
-In this assignment, we aimed to create a high-quality readme app. This app includes how to use, install, report issues and descriptions, and contact the GitHub user. Others can quickly and easily create a read-me file using command-line applications to generate one. In return, it allows the developer to devote more time to the project. The README will be created dynamically from the user's inputs. There will be a short video showing the steps to create the README.
+In this assignment, I aimed to create a high-quality readme app. This app includes how to use, install, report issues and descriptions, and contact the GitHub user. Others can quickly and easily create a read-me file using command-line applications to generate one. In return, it allows the developer to devote more time to the main project. The README will be created dynamically from the user's inputs. There will be a short video showing the steps to create the README.
 ​
 
 ## Tasks

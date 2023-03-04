@@ -1,34 +1,48 @@
-# 06 Server-Side APIs: Weather Dashboard
+# 09 Node.js Challenge: Professional README Generator
 
 ​
 
 ## Description
 
-​
-
+In this assignment, we aimed to create a high-quality readme app. This app includes how to use, install, report issues and descriptions, and contact the GitHub user. Others can quickly and easily create a read-me file using command-line applications to generate one. In return, it allows the developer to devote more time to the project. The README will be created dynamically from the user's inputs. There will be a short video showing the steps to create the README.
 ​
 
 ## Tasks
 
-​
-
+GIVEN a command-line application that accepts user input
+WHEN I am prompted for information about my application repository
+THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+WHEN I enter my project title
+THEN this is displayed as the title of the README
+WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+WHEN I choose a license for my application from a list of options
+THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+WHEN I enter my GitHub username
+THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+WHEN I enter my email address
+THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+WHEN I click on the links in the Table of Contents
+THEN I am taken to the corresponding section of the README
 ​
 
 ## Usage
 
 ​
-
-​
+Screencastify Link:
 
 ## Links
 
-​
+Email:
+​GitHub Repo Page:
 
 ## Credits
 
-​
-
-​
+https://www.npmjs.com/package/inquirer/v/8.2.4
+​https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+Carly Gallagher- provided assistance
+Rob Ambriz- provided assistance
+​Myleen Grace Santana- provided assistance
 
 ## License
 

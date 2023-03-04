@@ -40,11 +40,15 @@ Email:
 
 ## Credits
 
-https://www.npmjs.com/package/inquirer/v/8.2.4
-​https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
-Carly Gallagher- provided assistance
-Rob Ambriz- provided assistance
-​Myleen Grace Santana- provided assistance
+- https://www.npmjs.com/package/inquirer/v/8.2.4
+
+- https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+
+- Carly Gallagher- provided assistance
+
+- Rob Ambriz- provided assistance
+
+- Myleen Santana- provided assistance
 
 ## License
 
